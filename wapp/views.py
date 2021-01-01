@@ -21,7 +21,7 @@ def home(request):
             "temp": str(round((list_of_data['main']['temp']-273.5),3)) + 'C', 
             "pressure": str(list_of_data['main']['pressure']), 
             "humidity": str(list_of_data['main']['humidity']), 
-            "wind": str(list_of_data['wind']['speed']),
+            "wind": str(list_of_data['wind']['speed'])+"km/h",
             "weather":list_of_data["weather"][0]["main"],
             "lon":list_of_data["coord"]['lon'],
             "lat":list_of_data["coord"]['lat'],
